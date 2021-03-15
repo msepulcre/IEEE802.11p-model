@@ -6,7 +6,7 @@ function [ FER_avg ] = get_FER ( Eb_No , PDF_Eb_No , step_dB)
     % This is an auxiliary script used by function model80211p to model the 
     % communication performance of IEEE 802.11p using the analytical models described in:
     % 
-    %    Miguel Sepulcre, Manuel Gonzalez-Martín, Javier Gozalvez, Rafael Molina-Masegosa, 
+    %    Miguel Sepulcre, Manuel Gonzalez-MartÃ­n, Javier Gozalvez, Rafael Molina-Masegosa, 
     %    "Analytical Models of the Performance of IEEE 802.11p Vehicle to Vehicle Communications", 
     %    Arxiv, 2021.
     %
@@ -32,6 +32,6 @@ function [ FER_avg ] = get_FER ( Eb_No , PDF_Eb_No , step_dB)
 
     FER_interp = interp1(vector_Eb_No_paper , vector_FER_paper , Eb_No , 'linear');    % Interpolated values from FER vs Eb/No curve
 
-    FER_avg =  PDF_Eb_No * FER_interp' * step_dB;   % Provides the average FER. Equation (
+    FER_avg =  PDF_Eb_No * FER_interp' * step_dB;   % Provides the average FER. 
 
 end
