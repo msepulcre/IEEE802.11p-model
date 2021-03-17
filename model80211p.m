@@ -182,7 +182,7 @@ function [PDR,deltaSEN,deltaRXB,deltaPRO,deltaCOL,CBR] = model80211p(beta,lambda
     % Load simulation results if they exist: 
     if exist(file1,'file')
         fig_ERR = openfig(file1);
-        lh = findall(gca, 'type', 'line');
+        lh = findall(fig_ERR, 'type', 'line');
         X = get(lh,'xdata'); 
         Y = get(lh,'ydata'); 
         delta_PRO_sim = Y{4};
@@ -191,7 +191,7 @@ function [PDR,deltaSEN,deltaRXB,deltaPRO,deltaCOL,CBR] = model80211p(beta,lambda
         delta_SEN_sim = Y{1};
         
         fig_PDR = open(file2);
-        lh = findall(gca, 'type', 'line');
+        lh = findall(fig_PDR, 'type', 'line');
         distance_sim = get(lh,'xdata'); 
         PDR_sim = get(lh,'ydata'); 
         clear lh                      
@@ -199,7 +199,7 @@ function [PDR,deltaSEN,deltaRXB,deltaPRO,deltaCOL,CBR] = model80211p(beta,lambda
         if exist(file3,'file')
             fig_CBR = open(file3);
             hold on
-            lh = findall(gca, 'type', 'bar');
+            lh = findall(fig_CBR, 'type', 'bar');
             x_cbr_sim = get(lh,'xdata'); 
             pdf_cbr_sim = get(lh,'ydata'); 
             CBR_sim = sum(x_cbr_sim.*pdf_cbr_sim);
