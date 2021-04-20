@@ -3,11 +3,12 @@ function [PDR,deltaSEN,deltaRXB,deltaPRO,deltaCOL,CBR] = model80211p(beta,lambda
 % model80211p is the main script of the implementation of the analytical 
 % models of the communication performance of IEEE 802.11p described in the following paper:
 % 
-%    Miguel Sepulcre, Manuel Gonzalez-Martín, Javier Gozalvez, Rafael Molina-Masegosa, 
+%    Miguel Sepulcre, Manuel Gonzalez-MartÃ­n, Javier Gozalvez, Rafael Molina-Masegosa, 
 %    "Analytical Models of the Performance of IEEE 802.11p Vehicle to Vehicle Communications", 
-%    Arxiv, 2021.
+%    arXiv:2104.07923 [cs.NI], April 2021.
+%    Available at: https://arxiv.org/abs/2104.07923
 %
-% This paper addresses this gap, and presents the first analytical models capable to accurately 
+% This paper addresses presents the first analytical models capable to accurately 
 % model the performance of vehicle-to-vehicle communications based on the IEEE 802.11p standard. 
 % The model quantifies the PDR (Packet Delivery Ratio) as a function of the distance between 
 % transmitter and receiver. The paper also presents new analytical models to quantify the 
@@ -62,7 +63,7 @@ function [PDR,deltaSEN,deltaRXB,deltaPRO,deltaCOL,CBR] = model80211p(beta,lambda
     noise = -95;                    % Background noise in 10 MHz assuming a noise figure of 9dB (dBm)   
     sigma = 13e-6;                  % aSlotTime in 802.11-2012 (seconds)
     H = 30;                         % length of headers in Omnet++ approx (Bytes)    
-    Ttr = 40e-6 + (B+H)*8/Rd;       % Packet transmission time (duration) in 802.11-2012 (page 1588,1591) =  T_preamble + T_signal + T_data ; t_preamble = 32 us , t_signal = 8 us , t_data = nºbits/data_rate
+    Ttr = 40e-6 + (B+H)*8/Rd;       % Packet transmission time (duration) in 802.11-2012 (page 1588,1591) =  T_preamble + T_signal + T_data ; t_preamble = 32 us , t_signal = 8 us , t_data = nÂºbits/data_rate
     
     % Compute the PSR (Packet Sensing Ratio):
     d_aux=-1500:1500;
