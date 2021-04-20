@@ -3,7 +3,8 @@ This code implements in Matlab the analytical models of the communication perfor
 
     Miguel Sepulcre, Manuel Gonzalez-Martín, Javier Gozalvez, Rafael Molina-Masegosa, 
     "Analytical Models of the Performance of IEEE 802.11p Vehicle to Vehicle Communications", 
-    Arxiv, 2021.
+    arXiv:2104.07923 [cs.NI], April 2021.
+    Available at: https://arxiv.org/abs/2104.07923
 
 This paper presents the first analytical models capable to accurately model the performance of vehicle-to-vehicle communications based on the IEEE 802.11p standard. The model quantifies the PDR (Packet Delivery Ratio) as a function of the distance between transmitter and receiver. The paper also presents new analytical models to quantify the probability of the four different types of packet errors in IEEE 802.11p. In addition, the paper presents the first analytical model capable to accurately estimate the Channel Busy Ratio (CBR) metric even under high channel load levels. All the analytical models are validated by means of simulation for a wide range of parameters, including traffic densities, packet transmission frequencies, transmission power levels, data rates and packet sizes. 
 
