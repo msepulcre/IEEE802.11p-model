@@ -2,10 +2,11 @@ function run_all
 
 % This script runs all the configurations included in the following paper:  
 %
-%    Miguel Sepulcre, Manuel Gonzalez-Martín, Javier Gozalvez, Rafael Molina-Masegosa, 
-%    "Analytical Models of the Performance of IEEE 802.11p Vehicle to Vehicle Communications", 
-%    arXiv:2104.07923 [cs.NI], April 2021.
-%    Available at: https://arxiv.org/abs/2104.07923
+%  Miguel Sepulcre, Manuel Gonzalez-Martín, Javier Gozalvez, Rafael Molina-Masegosa, Baldomero Coll-Perales, 
+%  "Analytical Models of the Performance of IEEE 802.11p Vehicle to Vehicle Communications", 
+%  IEEE Transactions on Vehicular Technology, November 2021. DOI: 10.1109/TVT.2021.3124708
+%  Final version available at: https://ieeexplore.ieee.org/document/9599363
+%  Post-print version available at: https://arxiv.org/abs/2104.07923
     
 %   model80211p(beta,lambda,Pt,B,Rd);
 
