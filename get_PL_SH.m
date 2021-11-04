@@ -6,9 +6,11 @@ function [ PL , std_dev ] = get_PL_SH ( distance );
 % This is an auxiliary script used by function model80211p to model the 
 % communication performance of IEEE 802.11p using the analytical models described in:
 % 
-%    Miguel Sepulcre, Manuel Gonzalez-Martín, Javier Gozalvez, Rafael Molina-Masegosa, 
+%    Miguel Sepulcre, Manuel Gonzalez-MartÃ­n, Javier Gozalvez, Rafael Molina-Masegosa, Baldomero Coll-Perales, 
 %    "Analytical Models of the Performance of IEEE 802.11p Vehicle to Vehicle Communications", 
-%    Arxiv, 2021.
+%    IEEE Transactions on Vehicular Technology, November 2021. DOI: 10.1109/TVT.2021.3124708
+%    Final version available at: https://ieeexplore.ieee.org/document/9599363
+%    Post-print version available at: https://arxiv.org/abs/2104.07923
 %
 % The equations that are identified with a number between brackets in this script are the ones
 % that also appear in the paper so that they can be easily identified. 
